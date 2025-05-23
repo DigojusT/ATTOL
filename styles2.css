@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 4px 2px rgb(206, 206, 206);
+    margin-bottom: 10px;
+}
+
+.titles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    font-weight: 500;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin: 0 16px 0;
+}
+
+.titles h4 {
+    font-weight: bold;
+}
+
+.padbutton {
+    transition: all ease 0.4s;
+    align-content: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.padbutton:hover {
+    background-color: rgb(159, 159, 159);
+}
+.padbutton:active {
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start;
+    width: 80%;
+    padding: 16px 16px 20px 16px;
+}
+
+main h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(53, 53, 53);
+}
+
+main h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(53, 53, 53);
+}
+
+main p {
+    margin-bottom: 10px;
+    width: 50%;
+    font-size:x-large;
+    font-weight: 600;
+    color: rgb(114, 114, 114);
+}
+
+main p a {
+    color: rgb(0, 43, 152);
+    text-decoration: none;
+}
+
+footer {
+    justify-items: center;
+    box-shadow: 0px -2px 2px rgb(206, 206, 206);
+}
+
+footer p {
+    font-size:small;
+    font-weight: 600;
+    color: rgb(57, 57, 57);
+}
+
+footer p a {
+    color: rgb(0, 43, 152);
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+    .titles h4 {
+        font-weight: bold;
+        font-size:small
+    }
+    main h1 {
+        font-size: 30px;
+        margin-bottom: 10px;  
+    }
+
+    main h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        justify-self: start;
+        font-weight: 500;
+    }
+
+    main p {
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: medium;
+        font-weight: 600;
+    }
+}

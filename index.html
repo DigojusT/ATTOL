@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTOL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="titles">
+            <h1 class="title">ATTOL</h1>
+            <i><h6>a thing to organize learning</h6></i>
+            
+        </div>
+        <nav>
+            <img class="padbutton addbtn" title="Add" src="img/add.png" onclick="showssmth(addplace), addplacevisible = true">
+            <img class="padbutton delbtn hidden" title="Delete" src="img/trash.png" onclick="del()">
+            <img id="selec" class="padbutton " title="Select" src="img/select0.png" onclick="selec()">
+        </nav> 
+    </header>
+    <nav class="navmobile">
+        <button class="se btn-selected-mobile" onclick="chance_section(this)">Search</button>
+        <button class="te" onclick="chance_section(this)">Teach</button>
+        <button class="le" onclick="chance_section(this)">Learned</button>
+        <a href="about.html" style="text-decoration: none;"><button>About</button></a>
+        
+    </nav>
+    <main>
+        <section class="sea">
+            <h2 class="section-title">Search</h2>
+            <article class="addplace">
+                <input type="text" class="input">
+                <div class="buttons">
+                    <img class="padbutton" src="img/add.png" onclick="add()">
+                    <img class="padbutton" src="img/close.png" onclick="hidesmth(addplace), addplacevisible = false">
+                </div>
+            </article>
+            <div class="search list"> 
+            </div> 
+        </section>
+        <section class="tea hide-on-mobile">
+            <h2 class="section-title">Teach</h2>
+            <div class="teach list">
+            </div>
+            
+            
+        </section>
+        <section class="lea hide-on-mobile">
+            <h2 class="section-title">Learned</h2>
+            <div class="learned list">
+                
+            </div>
+        </section>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.titles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titles h6 {
+    font-weight: bold;
+}
+
+.title {
+    font-weight: 500;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin: 0 16px 0;
+}
+.padbutton {
+    transition: all ease 0.4s;
+    align-content: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.padbutton:hover {
+    background-color: rgb(159, 159, 159);
+}
+.padbutton:active {
+    background-color: rgb(255, 255, 255);
+}
+
+nav { 
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 4px;
+    min-height: 89.3vh;
+    box-shadow: 0px 0px 4px rgb(131, 131, 131);
+}
+
+.section-title {
+    margin: 8px;
+    font-size: 32px;
+    align-self: center;
+}
+article {
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 243, 243);
+    border-radius: 8px;
+    align-items: center;
+}
+
+.card {
+    justify-content: flex-start;
+}
+
+article button {
+    background-color: rgb(214, 214, 214);
+    padding: 4px;
+    width: 4vh;
+    height: 4vh;
+    margin: 4px;
+    font-size: 24px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+article p {
+    font-size: 24px;
+    margin: 0 8px 0 8px;
+    justify-self: center;
+}
+
+.addplace {
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 8px;
+    align-items: center;
+}
+.addplace input {
+    height: 90%;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 0 4px;
+}
+
+.buttons {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.cardselect {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    justify-content: center;
+    width: 90%;
+}
+
+.check {
+    margin: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.content {
+    text-align: start;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+        min-height: 88vmax;
+    }
+
+    .content {
+        font-size: small;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    nav button {
+        display: flex;
+        padding: 8px;
+        font-weight: 600;
+        border-style: none;
+        border-bottom: 2px solid white;
+        font-size: 16px;
+        background-color: white;
+        margin: 0 0 1px 0s;
+    }
+    .btn-selected-mobile {
+        border-bottom: 2px solid rgb(40, 40, 40);
+    }
+
+    .navmobile {
+        display: flex;
+        justify-content: center;
+    }
+    .addplace input {
+        height: 80%;
+        border-radius: 10px;
+        font-size: larger;
+        padding: 0 4px;
+    }
+
+    .padbutton {
+        transition: all ease 0.4s;
+        align-content: center;
+        justify-content: center;
+        height: 16px;
+        width: 16px;
+        padding: 7px;
+        border-radius: 10px;
+    }
+    header {
+        margin-bottom: 0px;
+        padding: 8px 8px 1px 8px;
+    } 
+}
