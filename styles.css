@@ -192,6 +192,10 @@ article p {
     text-align: start;
 }
 
+.navmobile {
+    display: none;
+}
+
 @media (max-width: 768px) {
     section {
         width: 95%;
