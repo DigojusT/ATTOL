@@ -226,11 +226,23 @@ article p {
         justify-content: center;
     }
 
+    .navmobile button {
+        border-radius: 0;
+    }
+
+    .addplace {
+        height: 38px;
+    }
+
     .addplace input {
         height: 80%;
         border-radius: 10px;
-        font-size: larger;
+        font-size: medium;
         padding: 0 4px;
+    }
+
+    .buttons {
+        margin-left: 5px;
     }
 
     .padbutton {
@@ -239,7 +251,7 @@ article p {
         justify-content: center;
         height: 16px;
         width: 16px;
-        padding: 7px;
+        padding: 4px;
         border-radius: 10px;
     }
 
