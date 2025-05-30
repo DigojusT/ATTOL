@@ -72,9 +72,9 @@ function del() {
         const {selected} = card;
         if (cards[index].selected == true) {
             cards.splice(index, 1);
-            render();
-            saveCards();
         }
+        render();
+        saveCards();
     })
 }
 
